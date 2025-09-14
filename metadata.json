@@ -1,0 +1,5 @@
+{
+  "name": "AI Photo Studio",
+  "description": "An intuitive photo editing application that leverages AI to transform your images based on text prompts. Upload a photo, describe your desired changes, and watch the magic happen.",
+  "requestFramePermissions": []
+}
