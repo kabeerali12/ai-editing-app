@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout repository
+      # Checkout code
       - uses: actions/checkout@v3
 
       # Setup Java (needed for Gradle)
@@ -24,9 +24,10 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: 'stable'
+          channel: 'stable'
+          flutter-version: '3.24.0'   # 👈 You can change if your project uses another version
 
-      # Get dependencies
+      # Install dependencies
       - name: Install dependencies
         run: flutter pub get
 
